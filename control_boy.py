@@ -27,11 +27,15 @@ def reset_world():
 
     running = True
 
-    grass = Grass()     # 영속 객체, world가 존재하는 한 계속 살아있는 객체
-    game_world.add_object(grass, 0)
+    grass1 = Grass()     # 영속 객체, world가 존재하는 한 계속 살아있는 객체
+    game_world.add_object(grass1, 0)
 
-    boy = Boy()         # 영속 객체
+    boy = Boy()  # 영속 객체
     game_world.add_object(boy, 1)
+
+    grass2 = Grass(y = 60)  # 영속 객체, world가 존재하는 한 계속 살아있는 객체
+    game_world.add_object(grass2, 0)
+
 
 
 
